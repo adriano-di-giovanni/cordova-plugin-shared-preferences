@@ -4,7 +4,7 @@ addons:
 env:
   global:
     - SAUCE_USERNAME=adriano-di-giovanni
-    - SAUCE_ACCESS_KEY=f3dcb078-9d3d-4e06-a589-bcf1d24ec646"
+    - SAUCE_ACCESS_KEY=f3dcb078-9d3d-4e06-a589-bcf1d24ec646
     - TRAVIS_NODE_VERSION="4.3"
 matrix:
   include:
