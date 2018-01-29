@@ -35,7 +35,7 @@ Invoke `SharedPreferences.getInstance()` to retrieve the instance for the defaul
 var sharedPreferences = window.plugins.SharedPreferences.getInstance()
 ```
 
-You can manage than one set of preferences. Invoke `SharePreferences.getInstance(name)` to retrieve an instance for a specific set:
+You can manage multiple sets of preferences. Invoke `SharePreferences.getInstance(name)` to retrieve an instance for a specific set:
 
 ```javascripts
 var sharedPreferences = window.plugins.SharedPreferences.getInstance('settings')
