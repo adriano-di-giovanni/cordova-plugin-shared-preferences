@@ -118,7 +118,7 @@ sharedPreferences.del(key, successCallback, errorCallback)
             * [.put(key, value, [successCallback], [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+put)
             * [.del(key, [successCallback], [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+del)
             * [.has(key, successCallback, [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+has)
-            * [.keys([successCallback], [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+keys)
+            * [.keys(successCallback, [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+keys)
             * [.clear([successCallback], [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+clear)
 
 <a name="window.plugins.module_SharedPreferences.getInstance"></a>
@@ -149,7 +149,7 @@ Returns a SharedPreferences instance
     * [.put(key, value, [successCallback], [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+put)
     * [.del(key, [successCallback], [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+del)
     * [.has(key, successCallback, [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+has)
-    * [.keys([successCallback], [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+keys)
+    * [.keys(successCallback, [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+keys)
     * [.clear([successCallback], [errorCallback])](#window.plugins.module_SharedPreferences..SharedPreferences+clear)
 
 <a name="new_window.plugins.module_SharedPreferences..SharedPreferences_new"></a>
@@ -426,14 +426,14 @@ Checks whether the preferences contains a preference.
 
 <a name="window.plugins.module_SharedPreferences..SharedPreferences+keys"></a>
 
-#### sharedPreferences.keys([successCallback], [errorCallback])
+#### sharedPreferences.keys(successCallback, [errorCallback])
 Retrieves all keys from the preferences.
 
 **Kind**: instance method of [<code>SharedPreferences</code>](#window.plugins.module_SharedPreferences..SharedPreferences)  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [successCallback] | <code>function</code> | A callback which is called if the operation is completed successfully. Invoked with `(keys)`. |
+| successCallback | <code>function</code> | A callback which is called if the operation is completed successfully. Invoked with `(keys)`. |
 | [errorCallback] | <code>function</code> | A callback which is called if an error occurs. Invoked with `(err)`. |
 
 <a name="window.plugins.module_SharedPreferences..SharedPreferences+clear"></a>

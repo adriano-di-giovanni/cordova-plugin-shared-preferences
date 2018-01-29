@@ -399,7 +399,7 @@ SharedPreferences.prototype.has = function(key, successCallback, aErrorCallback)
 /**
  * Retrieves all keys from the preferences.
  *
- * @param {Function} [successCallback] A callback which is called if the operation is completed
+ * @param {Function} successCallback A callback which is called if the operation is completed
  * successfully. Invoked with `(keys)`.
  * @param {Function} [errorCallback] A callback which is called if an error occurs.
  * Invoked with `(err)`.
