@@ -9,12 +9,15 @@
     },
     "scripts": {
         "docs": "jsdoc2md --template README.hbs www/index.js > README.md",
-        "precommit": "lint-staged && npm run docs && git add README.md"
+        "precommit": "lint-staged && npm run docs && git add README.md",
+        "test:android": "cordova-paramedic --platform android --plugin ./",
+        "test:ios": "cordova-paramedic --platform ios --plugin ./"
     },
     "keywords": ["ecosystem:cordova", "cordova-android", "cordova-ios", "shared", "preferences"],
     "author": "Adriano Di Giovanni <me@adrianodigiovanni.com> (http://adrianodigiovanni.com/)",
     "license": "MIT",
     "devDependencies": {
+        "cordova-paramedic": "^0.5.0",
         "eslint": "^4.15.0",
         "eslint-config-prettier": "^2.9.0",
         "eslint-config-standard": "^11.0.0-beta.0",
